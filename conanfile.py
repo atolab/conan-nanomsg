@@ -35,9 +35,14 @@ class NanomsgConan(ConanFile):
         "enable_getaddrinfo_a=True", 
         "enable_tests=False", 
         "enable_tools=True", 
-        "enable_nanocat=True"
+        "enable_nanocat=True",
+        "fPIC=True"
     )
-        
+
+    def config_options(self):
+        if self.settings.os == "Windows":
+            del self.options.fPIC
+
     def source(self):
         source_url = "https://github.com/nanomsg/nanomsg"
         tools.get("{0}/archive/{1}.tar.gz".format(source_url, self.version))
