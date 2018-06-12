@@ -2,7 +2,7 @@
 
 | Bintray | Appveyor | Travis | 
 |---------|-----------|--------|
-|[![Download](https://api.bintray.com/packages/bincrafters/public-conan/nanomsg%3Abincrafters/images/download.svg)](https://bintray.com/bincrafters/public-conan/nanomsg%3Abincrafters/_latestVersion)|[![Build status](https://ci.appveyor.com/api/projects/status/github/bincrafters/conan-nanomsg?svg=true)](https://ci.appveyor.com/project/BinCrafters/conan-nanomsg)|[![Build Status](https://travis-ci.org/bincrafters/conan-nanomsg.svg)](https://travis-ci.org/bincrafters/conan-nanomsg)|
+|[![Download](https://api.bintray.com/packages/k0ekk0ek/public-conan/nanomsg%3Ak0ekk0ek/images/download.svg)](https://bintray.com/k0ekk0ek/public-conan/nanomsg%3Ak0ekk0ek/_latestVersion)|[![Build status](https://ci.appveyor.com/api/projects/status/github/k0ekk0ek/conan-nanomsg?svg=true)](https://ci.appveyor.com/project/k0ekk0ek/conan-nanomsg)|[![Build Status](https://travis-ci.org/k0ekk0ek/conan-nanomsg.svg)](https://travis-ci.org/k0ekk0ek/conan-nanomsg)|
 
 ## Conan.io Information
 
