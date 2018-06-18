@@ -7,7 +7,7 @@ import os
 
 class NanomsgConan(ConanFile):
     name = "nanomsg"
-    version = "1.1.2"
+    version = '06252016'
     homepage = "https://nanomsg.org/"
     url="https://github.com/k0ekk0ek/conan-nanomsg"
     description = "A socket library that provides several common communication patterns"
@@ -34,21 +34,24 @@ class NanomsgConan(ConanFile):
         "enable_doc=False", 
         "enable_getaddrinfo_a=True", 
         "enable_tests=False", 
-        "enable_tools=True", 
+        "enable_tools=False",
         "enable_nanocat=True",
         "fPIC=True"
     )
+
+    branch = 'master'
+    commit = '7e12a20e038234060d41d03c20721d08117f8607'
 
     def config_options(self):
         if self.settings.os == "Windows":
             del self.options.fPIC
 
     def source(self):
-        source_url = "https://github.com/nanomsg/nanomsg"
-        tools.get("{0}/archive/{1}.tar.gz".format(source_url, self.version))
-        extracted_dir = self.name + "-" + self.version
-        os.rename(extracted_dir, self.source_subfolder)
-        #Rename to "sources" is a convention to simplify later steps
+        source_url = 'https://github.com/nanomsg/nanomsg.git'
+        self.run('git clone --branch={0} {1} {2}'
+            .format(self.branch, source_url, self.source_subfolder))
+        self.run('git -C {0} checkout {1}'
+            .format(self.source_subfolder, self.commit))
 
     def configure(self):
         del self.settings.compiler.libcxx
