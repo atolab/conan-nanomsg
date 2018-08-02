@@ -9,7 +9,7 @@ class NanomsgConan(ConanFile):
     name = "nanomsg"
     version = '06252016'
     homepage = "https://nanomsg.org/"
-    url="https://github.com/k0ekk0ek/conan-nanomsg"
+    url="https://github.com/atolab/conan-nanomsg"
     description = "A socket library that provides several common communication patterns"
     license = "MIT"
     exports = ["LICENSE.md"]
