@@ -2,7 +2,7 @@
 
 | Bintray | Appveyor | Travis | 
 |---------|-----------|--------|
-|BINTRAY_BADGE_URL|APPVEYOR_BADGE_URL|TRAVIS_BADGE_URL|
+|[ ![Download](https://api.bintray.com/packages/atolab/public-conan/nanomsg%3Aatolab/images/download.svg?version=06252016%3Astable) ](https://bintray.com/atolab/public-conan/nanomsg%3Aatolab/06252016%3Astable/link)|[![Build status](https://ci.appveyor.com/api/projects/status/qxgq5yad9j0wuwhn/branch/stable/06252016?svg=true)](https://ci.appveyor.com/project/ATOLab/conan-nanomsg/branch/stable/06252016)|[![Build Status](https://travis-ci.org/k0ekk0ek/conan-nanomsg.svg?branch=stable%2F1.1.2)](https://travis-ci.org/k0ekk0ek/conan-nanomsg)|
 
 ## Conan.io Information
 
